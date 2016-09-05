@@ -501,7 +501,7 @@ static int unix_gid_parse(struct cache_detail *cd,
 	/* uid expiry Ngid gid0 gid1 ... gidN-1 */
 	int uid;
 	int gids = 0;
-	int rv;
+	int rv = 0;
 	int i;
 	int err;
 	time_t expiry;
