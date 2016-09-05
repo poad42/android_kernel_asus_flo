@@ -218,7 +218,7 @@ static inline int get_int(char **bpp, int *anint)
 {
 	char buf[50];
 	char *ep;
-	int rv;
+	int rv = 0;
 	int len = qword_get(bpp, buf, 50);
 	if (len < 0) return -EINVAL;
 	if (len ==0) return -ENOENT;
